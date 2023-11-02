@@ -15,7 +15,7 @@ function getUserChoice(userChoice){
     return undefined;
 }
 
-function playRound(userChoice, compChoice){
+function compare(userChoice, compChoice){
     let userWin = "";
     if(userChoice == "Rock"){
         if (compChoice == "Paper") userWin = false;
@@ -38,17 +38,28 @@ function playRound(userChoice, compChoice){
     return `You Lose! ${compChoice} beats ${userChoice}`;
 }
 
+function playRound(){
+    let userChoice = prompt("Please enter Rock, Paper or Scissors");
+    userChoice = getUserChoice(userChoice);
+    console.log(`User: ${userChoice}`);
+    let compChoice = getComputerChoice();
+    console.log(`Computer: ${compChoice}`);
+    console.log(compare(userChoice, compChoice));
+
+}
+
+function game(){
+    for(let i=0; i<5; i++){
+        playRound();
+    }
+}
+
+
+
 
 function main(){
     console.log("Hello world");
-    let userChoice = prompt("Please enter Rock, Paper or Scissors");
-    userChoice = getUserChoice(userChoice);
-    console.log(userChoice);
-    let compChoice = getComputerChoice();
-    console.log(compChoice);
-    console.log(playRound(userChoice, compChoice));
-
-
+    game();
 }
 
 main()
