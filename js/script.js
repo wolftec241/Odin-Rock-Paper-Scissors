@@ -39,12 +39,16 @@ function compare(userChoice, compChoice){
 }
 
 function playRound(){
+    /* Old code
     let userChoice = prompt("Please enter Rock, Paper or Scissors");
     userChoice = getUserChoice(userChoice);
     console.log(`User: ${userChoice}`);
     let compChoice = getComputerChoice();
     console.log(`Computer: ${compChoice}`);
     console.log(compare(userChoice, compChoice));
+    */
+
+    
 
 }
 

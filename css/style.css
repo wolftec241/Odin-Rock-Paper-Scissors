@@ -1,0 +1,68 @@
+body{
+    background-color: antiquewhite;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+}
+
+.body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 90vh;
+    gap: 10vh;
+}
+
+#title{
+    font-size: 56px;
+}
+
+.gameContent{
+    display: flex;
+    flex-wrap:  wrap;
+    gap: 30px;
+}
+
+.playerContainer{
+    background-color: gray;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: 30vh;
+    width: 40vh;
+    justify-content: space-between;
+}
+
+
+.score{
+    display: flex;
+    justify-content: center;
+}
+
+.choiceButtons{
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    gap: 10%;
+}
+
+.rock,
+.paper,
+.scissors{
+    background-color: white;
+    height: 100px;
+    width: 80px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    margin-block: 20px;
+}
+
+.itemsIcon{
+    height: 50px;
+    width: 50px;
+    align-self: center;
+}
+
