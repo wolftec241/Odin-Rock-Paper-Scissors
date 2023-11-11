@@ -41,6 +41,11 @@ body{
     justify-content: center;
 }
 
+.playerIcon{
+    height: 50px;
+    width: 50px;
+}
+
 .choiceButtons{
     display: flex;
     justify-content: center;
@@ -48,21 +53,43 @@ body{
     gap: 10%;
 }
 
-.rock,
-.paper,
-.scissors{
+.itemsButton{
     background-color: white;
     height: 100px;
     width: 80px;
     display: flex;
     flex-flow: column nowrap;
-    justify-content: space-between;
+    justify-content: center;
     margin-block: 20px;
+    box-shadow: 6px 7px 7px;
+    border-radius: 3px;
+}
+
+
+#userChoice .itemsButton:hover{
+    transform: translate(1%, 1%);
+    transition: all 0.1s ease;
+    background-color: lightgrey;
+    border: 2px solid;
+}
+
+#userChoice .itemsButton:active{
+    background-color: gray;
 }
 
 .itemsIcon{
     height: 50px;
     width: 50px;
     align-self: center;
+    margin-bottom: 4px;
 }
 
+.winRound{
+    background-color: aqua;
+    padding: 0;
+}
+
+.lostRound{
+    background-color: red;
+    padding: 0;
+}
